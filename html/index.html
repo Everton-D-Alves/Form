@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="data">
+        <script src="../js/data.js"></script>
+    </div>
+    <div class="main">
+        <form action="../js/db.json" method="POST">
+            <h3><ins>Formulário</ins></h3>
+            <fieldset>
+                <legend>Cadastro</legend>
+                <p><label for="nome">Nome: </label></p>
+                <p><input type="text" name="dbnome" id="nome" placeholder="Nome" required /></p>
+                <p><label for="sobrenome">Sobrenome: </label></p>
+                <p><input type="text" name="dbsobrenome" id="sobrenome" placeholder="Sobrenome" required /></p>
+                <p><label for="email">Email: </label></p>
+                <p><input type="email" name="dbemail" id="email" required /></p>
+                <label for="senha">Senha: </label>
+                <input type="password" name="dbsenha" id="senha" minlength="8" required/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="fone">Telefone: </label>
+                <input type="tel" name="dbfone" id="fone">
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <label for="feminino">Feminino: </label>
+                <input type="radio" name="sexo" id="feminino" value="Feminino" />
+                <label for="masculino">Masculino: </label>
+                <input type="radio" name="sexo" id="masculino" value="Masculino" />
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <p><label for="rua">Logradouro: </label></p>
+                <p><input type="text" name="dbrua" id="rua" placeholder="Rua" require /></p>
+                <p><label for="num">Nº: </label>
+                <input type="number" name="dbnum" id="num" min="1" max="4500" required />&nbsp;&nbsp;&nbsp;
+                <label for="bairro">Bairro: </label>
+                <input type="text" name="dbbairro" id="bairro" required /></p>
+            </fieldset>
+            <fieldset>
+                <legend>Pedido</legend>
+                <label for="qtd">Quantidade: </label>
+                <input type="number" name="dbqtd" id="qtd" min="1" max="3" required />&nbsp;&nbsp;&nbsp;
+                <label for="data">Data do pedido: </label>
+                <input type="date" name="dbdata" id="data" required />&nbsp;&nbsp;&nbsp;
+                <label for="cor">Cor: </label>
+                <input type="color" name="dbcor" id="cor" required /><br/>
+                <input type="checkbox" name="dbpermitir" id="permitir" /> Permito coletar os dados do formulário.
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Cancelar" />
+            </fieldset>
+        </form>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+    <div id="horas">
+        <script src="../js/hora.js"></script>
+    </div>
+</body>
+</html>

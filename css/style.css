@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'Old';
+    src: url('../html/font/Old.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Garet';
+    src: url('../html/font/Garet-Book.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Horas';
+    src: url('../html/font/Horas.ttf') format('truetype');
+}
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    font-family: 'Garet';
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+form{
+    background-color: silver;
+    color:gray;
+    text-shadow: 0px 1px 0px #fff;
+    font-size: 1.5em;
+    border: 1px black solid;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4), -1px -1px 1px rgba(0, 0, 0, 0.4)
+}
+h3{
+    text-align: center;
+}
+input, textarea{
+    font-family: 'Garet';
+    font-size: 0.7em;
+    border-radius: 8px;
+    padding: 5px;
+}
+#feminino, #masculino, #data, #cor, #permitir{
+    cursor: pointer;
+}
+#nome, #sobrenome, #email, #rua{
+    width: 800px;
+}
+#bairro{
+    width: 540px;
+}
+#horas{
+    background-image: linear-gradient(to right, green 5%, yellow, blue, white 90%);
+    background-position: right;
+    font-family: 'Horas';
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+.data{
+    background-color: blue;
+    color: cyan;
+    font-family: 'Old';
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
